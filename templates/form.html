@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Form in HTML
+        </title>
+        <style>
+            div{background-color:antiquewhite; height:65px;}
+        </style>
+    </head>
+    <body>
+        <h1 style = "text-align:center; color:purple; background-color:rgb(245,250, 215);"><b>PATIENT LIVER PREDICTION</b></h1>
+        <form action = "{{url_for('predict_datapoint')}}" method = "POST">
+            <fieldset>
+                <legend><h2><b>User Information:</b></h2></legend>
+                <div class = "form-group">
+                    <label for = "Gender"><b>Gender:</b></label><br>
+                    <select id = "Gender" name = "Gender">
+                        <option value = "Male">Male</option>
+                        <option value = "Female">Female</option>
+                    </select>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "Age"><b>Age:</b></label><br>
+                    <input type = "text" id = "Age" name = "Age"/><br>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "Total_Bilirubin"><b>Total_Bilirubin:</b></label><br>
+                    <input type = "text" id = "Total_Bilirubin" name = "Total_Bilirubin"/><br>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "Direct_Bilirubin"><b>Direct_Bilirubin:</b></label><br>
+                    <input type = "text" id = "Direct_Bilirubin" name = "Direct_Bilirubin"/><br>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "Alkaline_Phosphotase"><b>Alkaline_Phosphotase:</b></label><br>
+                    <input type = "text" id = "Alkaline_Phosphotase" name = "Alkaline_Phosphotase"/><br>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "Alamine_Aminotransferase"><b>Alamine_Aminotransferase:</b></label><br>
+                    <input type = "text" id = "Alamine_Aminotransferase" name = "Alamine_Aminotransferase"/><br>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "Aspartate_Aminotransferase"><b>Aspartate_Aminotransferase:</b></label><br>
+                    <input type = "text" id = "Aspartate_Aminotransferase" name = "Aspartate_Aminotransferase"/><br>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "Total_Protiens"><b>Total_Protiens:</b></label><br>
+                    <input type = "text" id = "Total_Protiens" name = "Total_Protiens"/><br>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "Albumin"><b>Albumin:</b></label><br>
+                    <input type = "text" id = "Albumin" name = "Albumin"/><br>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "Albumin_and_Globulin_Ratio"><b>Albumin_and_Globulin_Ratio:</b></label><br>
+                    <input type = "text" id = "Albumin_and_Globulin_Ratio" name = "Albumin_and_Globulin_Ratio"/><br>
+                </div>
+
+                <div style = "clear:both;"></div>
+                <input type = "submit" value = "Submit">
+         
+            </fieldset>
+        </form>
+    </body>
+</html>
